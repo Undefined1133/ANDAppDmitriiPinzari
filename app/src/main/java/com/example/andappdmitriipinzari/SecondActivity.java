@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 public class SecondActivity extends AppCompatActivity {
 
     @Override
@@ -13,9 +15,12 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Bundle bundle = getIntent().getExtras();
-        String username  = bundle.getString("username");
+        String account  =  bundle.getString("account");
+        Gson gson = new Gson();
+        User user = gson.fromJson(account,User.class);
+
 
         TextView usernameView = findViewById(R.id.username);
-        usernameView.setText(username);
+        usernameView.setText(user.getFirstName());
     }
 }
