@@ -37,6 +37,11 @@ public class SecondActivity extends AppCompatActivity {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.container,new SomeFragment()).commit();
         });
+        Button touchButton = findViewById(R.id.touch);
+        touchButton.setOnClickListener(view -> {
+         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+         transaction.replace(R.id.container,new TouchFragment()).commit();
+        });
 
 
     }
