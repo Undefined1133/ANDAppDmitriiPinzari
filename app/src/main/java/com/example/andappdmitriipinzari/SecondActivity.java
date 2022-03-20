@@ -32,8 +32,8 @@ public class SecondActivity extends AppCompatActivity {
 //        viewModel = new ViewModelProvider(this).get(UserViewModel.class);
 //        viewModel.insert(user);
 
-        Button homeButton = findViewById(R.id.Home);
-        homeButton.setOnClickListener(view -> {
+        Button watchButton = findViewById(R.id.video);
+        watchButton.setOnClickListener(view -> {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.container,new SomeFragment()).commit();
         });

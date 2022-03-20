@@ -31,7 +31,7 @@
         />
 
     <Button
-        android:id="@+id/Home"
+        android:id="@+id/video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Watch"
@@ -40,21 +40,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/touch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Touch"
-        app:layout_constraintEnd_toStartOf="@+id/Home"
+        app:layout_constraintEnd_toStartOf="@+id/video"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/chatting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chat"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Home"
+        app:layout_constraintStart_toEndOf="@+id/video"
         app:layout_constraintTop_toTopOf="parent" />
 
 
