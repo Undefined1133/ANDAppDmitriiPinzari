@@ -18,7 +18,7 @@ public class UserRepository {
     private static UserRepository instance;
     private LiveData<List<User>> allUsers;
 
-    private UserRepository(Application application) {
+    protected UserRepository(Application application) {
         UserDatabase database = UserDatabase.getInstance(application);
         userDao = database.getUserDao();
         allUsers = userDao.getAllNotes();
